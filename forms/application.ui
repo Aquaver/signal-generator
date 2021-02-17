@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
   <class>Application</class>
+  
+  <widget class="QMainWindow" name="Application">
+  </widget>
 
   <resources />
   <connections />
