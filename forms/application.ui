@@ -3,6 +3,9 @@
   <class>Application</class>
   
   <widget class="QMainWindow" name="Application">
+    <property name="enabled">
+      <bool>true</bool>
+    </property>
   </widget>
 
   <resources />
