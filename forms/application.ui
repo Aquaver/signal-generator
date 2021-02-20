@@ -15,6 +15,13 @@
         <height>720</height>
       </rect>
     </property>
+    
+    <property name="minimumSize">
+      <size>
+        <width>1280</width>
+        <height>720</height>
+      </size>
+    </property>
   </widget>
 
   <resources />
