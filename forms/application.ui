@@ -29,6 +29,10 @@
         <height>720</height>
       </size>
     </property>
+    
+    <property name="windowTitle">
+      <string>Signal Generator</string>
+    </property>
   </widget>
 
   <resources />
