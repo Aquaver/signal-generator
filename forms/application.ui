@@ -33,6 +33,11 @@
     <property name="windowTitle">
       <string>Signal Generator</string>
     </property>
+    
+    <property name="styleSheet">
+      <string>
+      </string>
+    </property>
   </widget>
 
   <resources />
