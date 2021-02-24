@@ -36,6 +36,14 @@
     
     <property name="styleSheet">
       <string>
+        /* Elements styles */
+
+        QObject {
+          color: #FFFFFF;
+
+          font-family: Consolas;
+          font-size: 12px;
+        }
       </string>
     </property>
   </widget>
