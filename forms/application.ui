@@ -44,6 +44,10 @@
           font-family: Consolas;
           font-size: 12px;
         }
+        
+        QStackedWidget &gt; QWidget {
+          background-color: #333333;
+        }
       </string>
     </property>
   </widget>
