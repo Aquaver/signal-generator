@@ -48,6 +48,10 @@
         QStackedWidget &gt; QWidget {
           background-color: #333333;
         }
+        
+        QLabel, QLineEdit {
+          qproperty-alignment: AlignCenter;
+        }
       </string>
     </property>
   </widget>
