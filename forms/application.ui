@@ -52,6 +52,11 @@
         QLabel, QLineEdit {
           qproperty-alignment: AlignCenter;
         }
+        
+        QLineEdit, QComboBox, QListView {
+          background-color: #777777;
+          border: 0px;
+        }
       </string>
     </property>
   </widget>
