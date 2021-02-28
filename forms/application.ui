@@ -57,6 +57,11 @@
           background-color: #777777;
           border: 0px;
         }
+        
+        QListView {
+          selection-background-color: #AAAAAA;
+          show-decoration-selected: 0;
+        }
       </string>
     </property>
   </widget>
