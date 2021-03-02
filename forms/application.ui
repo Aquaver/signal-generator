@@ -70,6 +70,10 @@
           padding-left: 5px;
           padding-right: 5px;
         }
+        
+        QAbstractButton:hover {
+          background-color: qlineargradient(x1: 0.5, y1: 0, x2: 0.5, y2: 1, stop: 0 #00AAAA, stop: 1 #004444);
+        }
       </string>
     </property>
   </widget>
