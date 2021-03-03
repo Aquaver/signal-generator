@@ -74,6 +74,10 @@
         QAbstractButton:hover {
           background-color: qlineargradient(x1: 0.5, y1: 0, x2: 0.5, y2: 1, stop: 0 #00AAAA, stop: 1 #004444);
         }
+        
+        QAbstractButton:pressed {
+          background-color: qlineargradient(x1: 0.5, y1: 0, x2: 0.5, y2: 1, stop: 0 #AA0000, stop: 1 #440000);
+        }
       </string>
     </property>
   </widget>
