@@ -92,6 +92,10 @@
         QListWidget {
           background-color: qlineargradient(x1: 0.5, y1: 0, x2: 0.5, y2: 1, stop: 0 #777777, stop: 1 #555555);
         }
+        
+        QInputDialog {
+          background-color: #333333;
+        }
       </string>
     </property>
   </widget>
