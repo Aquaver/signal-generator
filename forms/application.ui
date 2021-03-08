@@ -96,6 +96,10 @@
         QInputDialog {
           background-color: #333333;
         }
+        
+        QMenu {
+          background-color: #555555;
+        }
       </string>
     </property>
   </widget>
