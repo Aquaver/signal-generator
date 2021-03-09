@@ -100,6 +100,10 @@
         QMenu {
           background-color: #555555;
         }
+        
+        QMenu::item:disabled {
+          color: #777777;
+        }
       </string>
     </property>
   </widget>
