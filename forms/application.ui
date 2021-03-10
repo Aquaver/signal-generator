@@ -104,6 +104,10 @@
         QMenu::item:disabled {
           color: #777777;
         }
+        
+        QMenu::item:selected:enabled {
+          background-color: #AAAAAA;
+        }
       </string>
     </property>
   </widget>
