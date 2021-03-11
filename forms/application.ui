@@ -108,6 +108,12 @@
         QMenu::item:selected:enabled {
           background-color: #AAAAAA;
         }
+        
+        /* Property-based group styles */
+
+        QWidget[padRight=true] {
+          qproperty-alignment: &quot;AlignVCenter | AlignRight&quot;;
+        }
       </string>
     </property>
   </widget>
