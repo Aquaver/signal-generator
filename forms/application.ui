@@ -114,6 +114,10 @@
         QWidget[padRight=true] {
           qproperty-alignment: &quot;AlignVCenter | AlignRight&quot;;
         }
+        
+        QWidget[panelTitle=true] {
+          background-color: #BB5500; font-size: 15px;
+        }
       </string>
     </property>
   </widget>
