@@ -118,6 +118,13 @@
         QWidget[panelTitle=true] {
           background-color: #BB5500; font-size: 15px;
         }
+        
+        /* Objects (identifiers) styles */
+
+        #chartField {
+          background: transparent;
+          border: 0px;
+        }
       </string>
     </property>
   </widget>
