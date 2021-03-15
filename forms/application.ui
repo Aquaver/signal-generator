@@ -132,6 +132,10 @@
 
           qproperty-alignment: &quot;AlignLeft | AlignTop&quot;;
         }
+        
+        #labelChartBackground {
+          background-color: #555555;
+        }
       </string>
     </property>
   </widget>
