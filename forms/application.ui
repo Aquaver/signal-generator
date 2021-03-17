@@ -143,6 +143,13 @@
 
           qproperty-alignment: &quot;AlignLeft | AlignBottom&quot;;
         }
+        
+        #labelChartX {
+          padding-right: 5px;
+          padding-top: 3px;
+
+          qproperty-alignment: &quot;AlignRight | AlignTop&quot;;
+        }
       </string>
     </property>
   </widget>
