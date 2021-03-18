@@ -150,6 +150,13 @@
 
           qproperty-alignment: &quot;AlignRight | AlignTop&quot;;
         }
+        
+        #labelChartY {
+          padding-left: 5px;
+          padding-top: 3px;
+
+          qproperty-alignment: &quot;AlignLeft | AlignTop&quot;;
+        }
       </string>
     </property>
   </widget>
