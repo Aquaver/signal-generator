@@ -162,6 +162,10 @@
           padding-bottom: 3px;
           qproperty-alignment: &quot;AlignRight | AlignVCenter&quot;;
         }
+        
+        #labelSineFormula {
+          background-color: #005555; font-size: 12px;
+        }
       </string>
     </property>
   </widget>
