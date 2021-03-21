@@ -166,6 +166,13 @@
         #labelSineFormula {
           background-color: #005555; font-size: 12px;
         }
+        
+        #labelTitle {
+          font-size: 30px;
+          font-weight: bold;
+
+          padding-top: 5px;
+        }
       </string>
     </property>
   </widget>
