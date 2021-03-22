@@ -175,6 +175,9 @@
         }
       </string>
     </property>
+    
+    <widget class="QWidget" name="applicationWindow">
+    </widget>
   </widget>
 
   <resources />
