@@ -190,6 +190,9 @@
           <height>720</height>
         </size>
       </property>
+      
+      <widget class="QStackedWidget" name="pageWindow">
+      </widget>
     </widget>
   </widget>
 
