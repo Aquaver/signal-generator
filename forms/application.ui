@@ -200,6 +200,9 @@
             <height>720</height>
           </rect>
         </property>
+        
+        <widget class="QWidget" name="pageMain">
+        </widget>
       </widget>
     </widget>
   </widget>
