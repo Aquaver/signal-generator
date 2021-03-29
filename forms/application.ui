@@ -202,6 +202,8 @@
         </property>
         
         <widget class="QWidget" name="pageMain">
+          <widget class="QGraphicsView" name="chartField">
+          </widget>
         </widget>
       </widget>
     </widget>
