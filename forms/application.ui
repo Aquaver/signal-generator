@@ -203,6 +203,14 @@
         
         <widget class="QWidget" name="pageMain">
           <widget class="QGraphicsView" name="chartField">
+            <property name="geometry">
+              <rect>
+                <x>20</x>
+                <y>60</y>
+                <width>1240</width>
+                <height>400</height>
+              </rect>
+            </property>
           </widget>
         </widget>
       </widget>
