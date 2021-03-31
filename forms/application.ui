@@ -212,6 +212,9 @@
               </rect>
             </property>
           </widget>
+          
+          <widget class="QListWidget" name="listCharts">
+          </widget>
         </widget>
       </widget>
     </widget>
