@@ -227,6 +227,9 @@
               <enum>QAbstractItemView::ExtendedSelection</enum>
             </property>
           </widget>
+          
+          <widget class="QLabel" name="labelChart">
+          </widget>
         </widget>
       </widget>
     </widget>
