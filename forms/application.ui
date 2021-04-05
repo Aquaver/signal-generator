@@ -237,6 +237,10 @@
                 <height>200</height>
               </rect>
             </property>
+            
+            <property name="text">
+              <string>[labelChart]</string>
+            </property>
           </widget>
         </widget>
       </widget>
