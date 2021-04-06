@@ -242,6 +242,9 @@
               <string>[labelChart]</string>
             </property>
           </widget>
+          
+          <widget class="QLabel" name="labelChartBackground">
+          </widget>
         </widget>
       </widget>
     </widget>
