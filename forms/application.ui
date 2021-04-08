@@ -253,6 +253,9 @@
               </rect>
             </property>
           </widget>
+          
+          <widget class="QLabel" name="labelChartCenter">
+          </widget>
         </widget>
       </widget>
     </widget>
