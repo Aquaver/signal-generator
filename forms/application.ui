@@ -255,6 +255,14 @@
           </widget>
           
           <widget class="QLabel" name="labelChartCenter">
+            <property name="geometry">
+              <rect>
+                <x>20</x>
+                <y>260</y>
+                <width>620</width>
+                <height>200</height>
+              </rect>
+            </property>
           </widget>
         </widget>
       </widget>
