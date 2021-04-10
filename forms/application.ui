@@ -263,6 +263,10 @@
                 <height>200</height>
               </rect>
             </property>
+            
+            <property name="text">
+              <string>[labelChartCenter]</string>
+            </property>
           </widget>
         </widget>
       </widget>
