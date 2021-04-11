@@ -268,6 +268,9 @@
               <string>[labelChartCenter]</string>
             </property>
           </widget>
+          
+          <widget class="QLabel" name="labelChartX">
+          </widget>
         </widget>
       </widget>
     </widget>
