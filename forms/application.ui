@@ -283,6 +283,9 @@
               <string>X</string>
             </property>
           </widget>
+          
+          <widget class="QLabel" name="labelChartY">
+          </widget>
         </widget>
       </widget>
     </widget>
