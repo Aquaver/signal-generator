@@ -285,6 +285,14 @@
           </widget>
           
           <widget class="QLabel" name="labelChartY">
+            <property name="geometry">
+              <rect>
+                <x>640</x>
+                <y>60</y>
+                <width>620</width>
+                <height>200</height>
+              </rect>
+            </property>
           </widget>
         </widget>
       </widget>
