@@ -293,6 +293,10 @@
                 <height>200</height>
               </rect>
             </property>
+            
+            <property name="text">
+              <string>Y</string>
+            </property>
           </widget>
         </widget>
       </widget>
