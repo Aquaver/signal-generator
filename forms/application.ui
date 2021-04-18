@@ -300,6 +300,14 @@
           </widget>
           
           <widget class="QLabel" name="labelMovementDescription">
+            <property name="geometry">
+              <rect>
+                <x>640</x>
+                <y>0</y>
+                <width>620</width>
+                <height>60</height>
+              </rect>
+            </property>
           </widget>
         </widget>
       </widget>
