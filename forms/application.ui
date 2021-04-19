@@ -308,6 +308,14 @@
                 <height>60</height>
               </rect>
             </property>
+            
+            <property name="text">
+              <string>
+                Use keyboard arrows or the
+                buttons to move on chart field
+                Press ENTER to center in point (0, 0)
+              </string>
+            </property>
           </widget>
         </widget>
       </widget>
