@@ -317,6 +317,9 @@
               </string>
             </property>
           </widget>
+          
+          <widget class="QLabel" name="labelTitle">
+          </widget>
         </widget>
       </widget>
     </widget>
