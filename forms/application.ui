@@ -327,6 +327,10 @@
                 <height>50</height>
               </rect>
             </property>
+            
+            <property name="text">
+              <string>Signal Generator</string>
+            </property>
           </widget>
         </widget>
       </widget>
