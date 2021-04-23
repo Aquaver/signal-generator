@@ -332,6 +332,9 @@
               <string>Signal Generator</string>
             </property>
           </widget>
+          
+          <widget class="QPushButton" name="buttonMenuDelete">
+          </widget>
         </widget>
       </widget>
     </widget>
