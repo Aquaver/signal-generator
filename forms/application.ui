@@ -334,6 +334,9 @@
           </widget>
           
           <widget class="QPushButton" name="buttonMenuDelete">
+            <property name="enabled">
+              <bool>false</bool>
+            </property>
           </widget>
         </widget>
       </widget>
