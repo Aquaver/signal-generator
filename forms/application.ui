@@ -337,6 +337,15 @@
             <property name="enabled">
               <bool>false</bool>
             </property>
+            
+            <property name="geometry">
+              <rect>
+                <x>980</x>
+                <y>630</y>
+                <width>280</width>
+                <height>30</height>
+              </rect>
+            </property>
           </widget>
         </widget>
       </widget>
