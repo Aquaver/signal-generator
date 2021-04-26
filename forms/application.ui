@@ -346,6 +346,10 @@
                 <height>30</height>
               </rect>
             </property>
+            
+            <property name="text">
+              <string>Delete</string>
+            </property>
           </widget>
         </widget>
       </widget>
