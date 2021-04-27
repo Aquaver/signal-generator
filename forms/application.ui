@@ -351,6 +351,9 @@
               <string>Delete</string>
             </property>
           </widget>
+          
+          <widget class="QPushButton" name="buttonMenuMoreActions">
+          </widget>
         </widget>
       </widget>
     </widget>
