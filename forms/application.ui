@@ -361,6 +361,10 @@
                 <height>30</height>
               </rect>
             </property>
+            
+            <property name="text">
+              <string>More Actions</string>
+            </property>
           </widget>
         </widget>
       </widget>
