@@ -366,6 +366,9 @@
               <string>More Actions</string>
             </property>
           </widget>
+          
+          <widget class="QPushButton" name="buttonMenuRename">
+          </widget>
         </widget>
       </widget>
     </widget>
