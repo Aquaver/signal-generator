@@ -380,6 +380,10 @@
                 <height>30</height>
               </rect>
             </property>
+            
+            <property name="text">
+              <string>Rename to...</string>
+            </property>
           </widget>
         </widget>
       </widget>
