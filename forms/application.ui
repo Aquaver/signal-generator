@@ -385,6 +385,9 @@
               <string>Rename to...</string>
             </property>
           </widget>
+          
+          <widget class="QPushButton" name="buttonMoveCenter">
+          </widget>
         </widget>
       </widget>
     </widget>
