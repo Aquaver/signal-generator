@@ -404,6 +404,9 @@
               <string>Return</string>
             </property>
           </widget>
+          
+          <widget class="QPushButton" name="buttonMoveDown">
+          </widget>
         </widget>
       </widget>
     </widget>
