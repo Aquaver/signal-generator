@@ -406,6 +406,14 @@
           </widget>
           
           <widget class="QPushButton" name="buttonMoveDown">
+            <property name="geometry">
+              <rect>
+                <x>1200</x>
+                <y>130</y>
+                <width>20</width>
+                <height>20</height>
+              </rect>
+            </property>
           </widget>
         </widget>
       </widget>
