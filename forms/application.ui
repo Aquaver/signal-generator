@@ -423,6 +423,9 @@
               <string>Down</string>
             </property>
           </widget>
+          
+          <widget class="QPushButton" name="buttonMoveLeft">
+          </widget>
         </widget>
       </widget>
     </widget>
