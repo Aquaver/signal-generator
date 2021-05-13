@@ -425,6 +425,14 @@
           </widget>
           
           <widget class="QPushButton" name="buttonMoveLeft">
+            <property name="geometry">
+              <rect>
+                <x>1170</x>
+                <y>100</y>
+                <width>20</width>
+                <height>20</height>
+              </rect>
+            </property>
           </widget>
         </widget>
       </widget>
