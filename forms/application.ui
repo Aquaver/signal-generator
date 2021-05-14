@@ -433,6 +433,10 @@
                 <height>20</height>
               </rect>
             </property>
+            
+            <property name="text">
+              <string>⮜</string>
+            </property>
           </widget>
         </widget>
       </widget>
