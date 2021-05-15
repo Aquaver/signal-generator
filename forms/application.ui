@@ -437,6 +437,10 @@
             <property name="text">
               <string>⮜</string>
             </property>
+            
+            <property name="shortcut">
+              <string>Left</string>
+            </property>
           </widget>
         </widget>
       </widget>
