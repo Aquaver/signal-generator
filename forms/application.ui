@@ -442,6 +442,9 @@
               <string>Left</string>
             </property>
           </widget>
+          
+          <widget class="QPushButton" name="buttonMoveRight">
+          </widget>
         </widget>
       </widget>
     </widget>
