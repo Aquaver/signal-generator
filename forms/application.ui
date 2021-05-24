@@ -480,6 +480,9 @@
               <string>Up</string>
             </property>
           </widget>
+          
+          <widget class="QPushButton" name="buttonViewZoomIn">
+          </widget>
         </widget>
       </widget>
     </widget>
