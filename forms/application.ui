@@ -482,6 +482,14 @@
           </widget>
           
           <widget class="QPushButton" name="buttonViewZoomIn">
+            <property name="geometry">
+              <rect>
+                <x>980</x>
+                <y>480</y>
+                <width>40</width>
+                <height>30</height>
+              </rect>
+            </property>
           </widget>
         </widget>
       </widget>
