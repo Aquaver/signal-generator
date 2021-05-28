@@ -499,6 +499,9 @@
               <string>+</string>
             </property>
           </widget>
+          
+          <widget class="QPushButton" name="buttonViewZoomOut">
+          </widget>
         </widget>
       </widget>
     </widget>
