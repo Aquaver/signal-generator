@@ -501,6 +501,14 @@
           </widget>
           
           <widget class="QPushButton" name="buttonViewZoomOut">
+            <property name="geometry">
+              <rect>
+                <x>1030</x>
+                <y>480</y>
+                <width>40</width>
+                <height>30</height>
+              </rect>
+            </property>
           </widget>
         </widget>
       </widget>
