@@ -513,6 +513,10 @@
             <property name="text">
               <string>-</string>
             </property>
+            
+            <property name="shortcut">
+              <string>-</string>
+            </property>
           </widget>
         </widget>
       </widget>
