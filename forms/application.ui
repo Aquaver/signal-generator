@@ -518,6 +518,9 @@
               <string>-</string>
             </property>
           </widget>
+          
+          <widget class="QPushButton" name="buttonViewZoomReset">
+          </widget>
         </widget>
       </widget>
     </widget>
