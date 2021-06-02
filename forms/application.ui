@@ -520,6 +520,14 @@
           </widget>
           
           <widget class="QPushButton" name="buttonViewZoomReset">
+            <property name="geometry">
+              <rect>
+                <x>1080</x>
+                <y>480</y>
+                <width>180</width>
+                <height>30</height>
+              </rect>
+            </property>
           </widget>
         </widget>
       </widget>
