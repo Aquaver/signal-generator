@@ -528,6 +528,10 @@
                 <height>30</height>
               </rect>
             </property>
+            
+            <property name="text">
+              <string>Zoom Reset</string>
+            </property>
           </widget>
         </widget>
       </widget>
