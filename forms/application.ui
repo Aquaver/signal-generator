@@ -532,6 +532,10 @@
             <property name="text">
               <string>Zoom Reset</string>
             </property>
+            
+            <property name="shortcut">
+              <string>Enter</string>
+            </property>
           </widget>
         </widget>
       </widget>
