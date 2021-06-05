@@ -537,6 +537,9 @@
               <string>Enter</string>
             </property>
           </widget>
+          
+          <widget class="QWidget" name="panelSine" native="true">
+          </widget>
         </widget>
       </widget>
     </widget>
