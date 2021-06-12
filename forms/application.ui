@@ -619,6 +619,25 @@
                 <string>Frequency, F</string>
               </property>
             </widget>
+            
+            <widget class="QLabel" name="labelSineParameterPhase">
+              <property name="geometry">
+                <rect>
+                  <x>0</x>
+                  <y>130</y>
+                  <width>210</width>
+                  <height>20</height>
+                </rect>
+              </property>
+
+              <property name="padRight" stdset="0">
+                <bool>true</bool>
+              </property>
+
+              <property name="text">
+                <string>Phase shift, P</string>
+              </property>
+            </widget>
           </widget>
         </widget>
       </widget>
