@@ -672,6 +672,21 @@
                 <string>Add Sine</string>
               </property>
             </widget>
+            
+            <widget class="QLineEdit" name="textSineParameterAmplitude">
+              <property name="geometry">
+                <rect>
+                  <x>220</x>
+                  <y>70</y>
+                  <width>70</width>
+                  <height>20</height>
+                </rect>
+              </property>
+
+              <property name="placeholderText">
+                <string>0.00</string>
+              </property>
+            </widget>
           </widget>
         </widget>
       </widget>
