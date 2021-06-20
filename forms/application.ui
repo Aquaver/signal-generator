@@ -733,6 +733,9 @@
               </property>
             </widget>
           </widget>
+          
+          <widget class="QWidget" name="panelSquare" native="true">
+          </widget>
         </widget>
       </widget>
     </widget>
