@@ -781,6 +781,25 @@
                 <string>Constant</string>
               </property>
             </widget>
+            
+            <widget class="QLabel" name="labelSquareParameterDutyCycle">
+              <property name="geometry">
+                <rect>
+                  <x>0</x>
+                  <y>100</y>
+                  <width>210</width>
+                  <height>20</height>
+                </rect>
+              </property>
+
+              <property name="padRight" stdset="0">
+                <bool>true</bool>
+              </property>
+
+              <property name="text">
+                <string>Duty cycle [%]</string>
+              </property>
+            </widget>
           </widget>
         </widget>
       </widget>
