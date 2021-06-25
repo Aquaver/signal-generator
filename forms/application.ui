@@ -800,6 +800,25 @@
                 <string>Duty cycle [%]</string>
               </property>
             </widget>
+            
+            <widget class="QLabel" name="labelSquareParameterPeriod">
+              <property name="geometry">
+                <rect>
+                  <x>0</x>
+                  <y>70</y>
+                  <width>210</width>
+                  <height>20</height>
+                </rect>
+              </property>
+
+              <property name="padRight" stdset="0">
+                <bool>true</bool>
+              </property>
+
+              <property name="text">
+                <string>Period</string>
+              </property>
+            </widget>
           </widget>
         </widget>
       </widget>
