@@ -948,6 +948,9 @@
               </property>
             </widget>
           </widget>
+          
+          <widget class="QWidget" name="panelTriangular" native="true">
+          </widget>
         </widget>
       </widget>
     </widget>
