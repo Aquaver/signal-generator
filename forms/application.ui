@@ -950,6 +950,14 @@
           </widget>
           
           <widget class="QWidget" name="panelTriangular" native="true">
+            <property name="geometry">
+              <rect>
+                <x>660</x>
+                <y>480</y>
+                <width>290</width>
+                <height>220</height>
+              </rect>
+            </property>
           </widget>
         </widget>
       </widget>
