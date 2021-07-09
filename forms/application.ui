@@ -1015,6 +1015,25 @@
                 <string>Dead Time (after each pulse)</string>
               </property>
             </widget>
+            
+            <widget class="QLabel" name="labelTriangularParameterEdge">
+              <property name="geometry">
+                <rect>
+                  <x>0</x>
+                  <y>160</y>
+                  <width>170</width>
+                  <height>20</height>
+                </rect>
+              </property>
+
+              <property name="padRight" stdset="0">
+                <bool>true</bool>
+              </property>
+
+              <property name="text">
+                <string>Edge (rising, falling)</string>
+              </property>
+            </widget>
           </widget>
         </widget>
       </widget>
