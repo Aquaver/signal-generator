@@ -1034,6 +1034,25 @@
                 <string>Edge (rising, falling)</string>
               </property>
             </widget>
+            
+            <widget class="QLabel" name="labelTriangularParameterPhase">
+              <property name="geometry">
+                <rect>
+                  <x>0</x>
+                  <y>100</y>
+                  <width>210</width>
+                  <height>20</height>
+                </rect>
+              </property>
+
+              <property name="padRight" stdset="0">
+                <bool>true</bool>
+              </property>
+
+              <property name="text">
+                <string>Phase shift</string>
+              </property>
+            </widget>
           </widget>
         </widget>
       </widget>
