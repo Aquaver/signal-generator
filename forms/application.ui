@@ -1072,6 +1072,21 @@
                 <string>Triangular Waveform</string>
               </property>
             </widget>
+            
+            <widget class="QPushButton" name="buttonAddTriangular">
+              <property name="geometry">
+                <rect>
+                  <x>0</x>
+                  <y>190</y>
+                  <width>290</width>
+                  <height>30</height>
+                </rect>
+              </property>
+
+              <property name="text">
+                <string>Add Triangular</string>
+              </property>
+            </widget>
           </widget>
         </widget>
       </widget>
