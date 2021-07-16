@@ -1132,6 +1132,21 @@
                 <string>0.00</string>
               </property>
             </widget>
+            
+            <widget class="QLineEdit" name="textTriangularParameterEdgeFalling">
+              <property name="geometry">
+                <rect>
+                  <x>240</x>
+                  <y>160</y>
+                  <width>50</width>
+                  <height>20</height>
+                </rect>
+              </property>
+
+              <property name="placeholderText">
+                <string>0.00</string>
+              </property>
+            </widget>
           </widget>
         </widget>
       </widget>
