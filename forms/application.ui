@@ -1178,6 +1178,9 @@
               </property>
             </widget>
           </widget>
+          
+          <widget class="Line" name="separatorPanelsA">
+          </widget>
         </widget>
       </widget>
     </widget>
