@@ -1180,6 +1180,14 @@
           </widget>
           
           <widget class="Line" name="separatorPanelsA">
+            <property name="geometry">
+              <rect>
+                <x>320</x>
+                <y>480</y>
+                <width>10</width>
+                <height>220</height>
+              </rect>
+            </property>
           </widget>
         </widget>
       </widget>
