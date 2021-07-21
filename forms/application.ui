@@ -1188,6 +1188,10 @@
                 <height>220</height>
               </rect>
             </property>
+            
+            <property name="orientation">
+              <enum>Qt::Vertical</enum>
+            </property>
           </widget>
         </widget>
       </widget>
