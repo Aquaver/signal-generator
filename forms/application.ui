@@ -1193,6 +1193,9 @@
               <enum>Qt::Vertical</enum>
             </property>
           </widget>
+          
+          <widget class="Line" name="separatorPanelsB">
+          </widget>
         </widget>
       </widget>
     </widget>
