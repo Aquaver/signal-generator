@@ -1223,6 +1223,9 @@
               <enum>Qt::Vertical</enum>
             </property>
           </widget>
+          
+          <widget class="Line" name="chartAxisX">
+          </widget>
         </widget>
       </widget>
     </widget>
