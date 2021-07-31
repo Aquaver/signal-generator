@@ -1237,6 +1237,10 @@
             <property name="frameShadow">
               <enum>QFrame::Plain</enum>
             </property>
+            
+            <property name="lineWidth">
+              <number>0</number>
+            </property>
           </widget>
         </widget>
       </widget>
