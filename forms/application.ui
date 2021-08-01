@@ -1241,6 +1241,10 @@
             <property name="lineWidth">
               <number>0</number>
             </property>
+            
+            <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+            </property>
           </widget>
         </widget>
       </widget>
