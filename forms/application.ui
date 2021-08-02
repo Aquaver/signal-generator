@@ -1246,6 +1246,9 @@
               <enum>Qt::Horizontal</enum>
             </property>
           </widget>
+          
+          <widget class="Line" name="chartAxisY">
+          </widget>
         </widget>
       </widget>
     </widget>
