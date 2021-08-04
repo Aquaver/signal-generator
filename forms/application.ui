@@ -1256,6 +1256,10 @@
                 <height>400</height>
               </rect>
             </property>
+            
+            <property name="frameShadow">
+              <enum>QFrame::Plain</enum>
+            </property>
           </widget>
         </widget>
       </widget>
