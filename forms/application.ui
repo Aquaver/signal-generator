@@ -1264,6 +1264,10 @@
             <property name="lineWidth">
               <number>0</number>
             </property>
+            
+            <property name="orientation">
+              <enum>Qt::Vertical</enum>
+            </property>
           </widget>
         </widget>
       </widget>
