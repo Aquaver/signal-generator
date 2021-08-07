@@ -1269,6 +1269,10 @@
               <enum>Qt::Vertical</enum>
             </property>
           </widget>
+          
+          <zorder>panelSine</zorder>
+          <zorder>panelSquare</zorder>
+          <zorder>panelTriangular</zorder>
         </widget>
       </widget>
     </widget>
