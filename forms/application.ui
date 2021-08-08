@@ -1273,6 +1273,9 @@
           <zorder>panelSine</zorder>
           <zorder>panelSquare</zorder>
           <zorder>panelTriangular</zorder>
+          
+          <zorder>labelChartBackground</zorder>
+          <zorder>labelTitle</zorder>
         </widget>
       </widget>
     </widget>
