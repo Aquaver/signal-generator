@@ -1276,6 +1276,10 @@
           
           <zorder>labelChartBackground</zorder>
           <zorder>labelTitle</zorder>
+          
+          <zorder>chartAxisX</zorder>
+          <zorder>chartAxisY</zorder>
+          <zorder>chartField</zorder>
         </widget>
       </widget>
     </widget>
