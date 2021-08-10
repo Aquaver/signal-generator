@@ -1280,6 +1280,11 @@
           <zorder>chartAxisX</zorder>
           <zorder>chartAxisY</zorder>
           <zorder>chartField</zorder>
+          
+          <zorder>labelChartCenter</zorder>
+          <zorder>labelChartX</zorder>
+          <zorder>labelChartY</zorder>
+          <zorder>labelChart</zorder>
         </widget>
       </widget>
     </widget>
