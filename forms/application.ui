@@ -1285,6 +1285,13 @@
           <zorder>labelChartX</zorder>
           <zorder>labelChartY</zorder>
           <zorder>labelChart</zorder>
+          
+          <zorder>labelSineFormula</zorder>
+          <zorder>labelSineParameterAmplitude</zorder>
+          <zorder>labelSineParameterConstant</zorder>
+          <zorder>labelSineParameterFrequency</zorder>
+          <zorder>labelSineParameterPhase</zorder>
+          <zorder>labelSineTitle</zorder>
         </widget>
       </widget>
     </widget>
