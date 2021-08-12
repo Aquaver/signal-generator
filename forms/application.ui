@@ -1292,6 +1292,13 @@
           <zorder>labelSineParameterFrequency</zorder>
           <zorder>labelSineParameterPhase</zorder>
           <zorder>labelSineTitle</zorder>
+          
+          <zorder>labelSquareParameterAmplitude</zorder>
+          <zorder>labelSquareParameterConstant</zorder>
+          <zorder>labelSquareParameterDutyCycle</zorder>
+          <zorder>labelSquareParameterPeriod</zorder>
+          <zorder>labelSquareParameterPhase</zorder>
+          <zorder>labelSquareTitle</zorder>
         </widget>
       </widget>
     </widget>
