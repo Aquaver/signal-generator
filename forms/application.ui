@@ -1299,6 +1299,13 @@
           <zorder>labelSquareParameterPeriod</zorder>
           <zorder>labelSquareParameterPhase</zorder>
           <zorder>labelSquareTitle</zorder>
+          
+          <zorder>labelTriangularParameterAmplitude</zorder>
+          <zorder>labelTriangularParameterConstant</zorder>
+          <zorder>labelTriangularParameterDeadTime</zorder>
+          <zorder>labelTriangularParameterEdge</zorder>
+          <zorder>labelTriangularParameterPhase</zorder>
+          <zorder>labelTriangularTitle</zorder>
         </widget>
       </widget>
     </widget>
