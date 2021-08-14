@@ -1306,6 +1306,10 @@
           <zorder>labelTriangularParameterEdge</zorder>
           <zorder>labelTriangularParameterPhase</zorder>
           <zorder>labelTriangularTitle</zorder>
+          
+          <zorder>buttonAddSine</zorder>
+          <zorder>buttonAddSquare</zorder>
+          <zorder>buttonAddTriangular</zorder>
         </widget>
       </widget>
     </widget>
