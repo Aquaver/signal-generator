@@ -1310,6 +1310,10 @@
           <zorder>buttonAddSine</zorder>
           <zorder>buttonAddSquare</zorder>
           <zorder>buttonAddTriangular</zorder>
+          
+          <zorder>buttonMenuDelete</zorder>
+          <zorder>buttonMenuMoreActions</zorder>
+          <zorder>buttonMenuRename</zorder>
         </widget>
       </widget>
     </widget>
