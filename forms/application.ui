@@ -1314,6 +1314,13 @@
           <zorder>buttonMenuDelete</zorder>
           <zorder>buttonMenuMoreActions</zorder>
           <zorder>buttonMenuRename</zorder>
+          
+          <zorder>buttonMoveCenter</zorder>
+          <zorder>buttonMoveDown</zorder>
+          <zorder>buttonMoveLeft</zorder>
+          <zorder>buttonMoveRight</zorder>
+          <zorder>buttonMoveUp</zorder>
+          <zorder>buttonMovementDescription</zorder>
         </widget>
       </widget>
     </widget>
