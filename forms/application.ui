@@ -1321,6 +1321,10 @@
           <zorder>buttonMoveRight</zorder>
           <zorder>buttonMoveUp</zorder>
           <zorder>buttonMovementDescription</zorder>
+          
+          <zorder>buttonViewZoomIn</zorder>
+          <zorder>buttonViewZoomOut</zorder>
+          <zorder>buttonViewZoomReset</zorder>
         </widget>
       </widget>
     </widget>
