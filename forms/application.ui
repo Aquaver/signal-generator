@@ -1325,6 +1325,11 @@
           <zorder>buttonViewZoomIn</zorder>
           <zorder>buttonViewZoomOut</zorder>
           <zorder>buttonViewZoomReset</zorder>
+          
+          <zorder>textSineParameterAmplitude</zorder>
+          <zorder>textSineParameterConstant</zorder>
+          <zorder>textSineParameterFrequency</zorder>
+          <zorder>textSineParameterPhase</zorder>
         </widget>
       </widget>
     </widget>
