@@ -1330,6 +1330,12 @@
           <zorder>textSineParameterConstant</zorder>
           <zorder>textSineParameterFrequency</zorder>
           <zorder>textSineParameterPhase</zorder>
+          
+          <zorder>textSquareParameterAmplitude</zorder>
+          <zorder>textSquareParameterConstant</zorder>
+          <zorder>textSquareParameterDutyCycle</zorder>
+          <zorder>textSquareParameterPeriod</zorder>
+          <zorder>textSquareParameterPhase</zorder>
         </widget>
       </widget>
     </widget>
