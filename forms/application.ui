@@ -1336,6 +1336,13 @@
           <zorder>textSquareParameterDutyCycle</zorder>
           <zorder>textSquareParameterPeriod</zorder>
           <zorder>textSquareParameterPhase</zorder>
+          
+          <zorder>textTriangularParameterAmplitude</zorder>
+          <zorder>textTriangularParameterConstant</zorder>
+          <zorder>textTriangularParameterDeadTime</zorder>
+          <zorder>textTriangularParameterEdgeFalling</zorder>
+          <zorder>textTriangularParameterEdgeRising</zorder>
+          <zorder>textTriangularParameterPhase</zorder>
         </widget>
       </widget>
     </widget>
