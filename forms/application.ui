@@ -1343,6 +1343,10 @@
           <zorder>textTriangularParameterEdgeFalling</zorder>
           <zorder>textTriangularParameterEdgeRising</zorder>
           <zorder>textTriangularParameterPhase</zorder>
+          
+          <zorder>separatorPanelsA</zorder>
+          <zorder>separatorPanelsB</zorder>
+          <zorder>separatorPanelsC</zorder>
         </widget>
       </widget>
     </widget>
