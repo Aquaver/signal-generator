@@ -1347,6 +1347,8 @@
           <zorder>separatorPanelsA</zorder>
           <zorder>separatorPanelsB</zorder>
           <zorder>separatorPanelsC</zorder>
+          
+          <zorder>listCharts</zorder>
         </widget>
       </widget>
     </widget>
