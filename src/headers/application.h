@@ -15,3 +15,7 @@ QT_END_NAMESPACE
 enum class MenuActions {
     MENU_ACTION_ADD, MENU_ACTION_SUBTRACT
 };
+
+class Application : public QMainWindow {
+  Q_OBJECT
+};
