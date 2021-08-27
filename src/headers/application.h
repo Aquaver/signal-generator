@@ -18,4 +18,10 @@ enum class MenuActions {
 
 class Application : public QMainWindow {
   Q_OBJECT
+
+  public:
+    Application(QWidget* parent = nullptr);
+    ~Application();
+
+    QGraphicsItemGroup* gridGroup = nullptr;
 };
