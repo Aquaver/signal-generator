@@ -24,4 +24,45 @@ class Application : public QMainWindow {
     ~Application();
 
     QGraphicsItemGroup* gridGroup = nullptr;
+
+  private:
+    Ui::Application* ui;
+
+    qint16 centerX = -1, centerY = -1; // Value -1 means uninitialized chart, its initialization happens in separate function.
+    qint16 chartWidth = -1, chartHeight = -1;
+    qint16 gridLengthX = -1, gridLengthY = -1;
+
+    qreal chartShiftX = -1, chartShiftY = -1;
+    qreal gridUnitX = -1, gridUnitY = -1;
+
+    QColor axesColor = QColor(64, 64, 64);
+    QColor gridColor = QColor(110, 110, 110);
+
+    QVector<qreal> gridLine = {5.0, 2.5};
+
+    QMap<QString, Signal*>* chartList = new QMap<QString, Signal*>();
+    QMap<QString, QGraphicsItemGroup*>* groupList = new QMap<QString, QGraphicsItemGroup*>();
+    QMap<MenuActions, QAction *>* actionList = new QMap<MenuActions, QAction*>();
+
+    // Chart field management interface.
+    void initChartField();
+    void initSlots();
+    void initTabOrder();
+    void initToolbar();
+    void initValues();
+    void updateAxesLabel();
+    void updateCenterLabel();
+
+    // Calculating and drawing charts.
+    void redrawAllCharts();
+
+    // Error handling dialogs.
+    void errorAddingChart();
+    void errorInvalidDeadTime();
+    void errorInvalidDutyCycle();
+    void errorInvalidEdgeTime();
+    void errorInvalidSignalCompound();
+
+    // Helper functions.
+    void createCompoundSignal(CompoundType type, QString typeName);
 };
