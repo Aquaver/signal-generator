@@ -65,4 +65,30 @@ class Application : public QMainWindow {
 
     // Helper functions.
     void createCompoundSignal(CompoundType type, QString typeName);
+
+  private slots:
+    // Interface buttons events.
+    void onAddSine();
+    void onAddSquare();
+    void onAddTriangular();
+
+    void onShiftCenter();
+    void onShiftDown();
+    void onShiftLeft();
+    void onShiftRight();
+    void onShiftUp();
+
+    void onZoomIn();
+    void onZoomOut();
+    void onZoomReset();
+
+    void onRemove();
+    void onRename();
+
+    // Interface menu events.
+    void menuAdd();
+    void menuSubtract();
+
+    // Other events.
+    void onItemSelected();
 };
