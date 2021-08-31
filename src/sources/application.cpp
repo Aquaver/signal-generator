@@ -10,3 +10,7 @@ Application::Application(QWidget* parent) : QMainWindow(parent), ui(new Ui::Appl
   initToolbar();
   initTabOrder();
 }
+
+Application::~Application() {
+  delete ui;
+}
