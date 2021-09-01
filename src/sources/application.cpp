@@ -14,3 +14,36 @@ Application::Application(QWidget* parent) : QMainWindow(parent), ui(new Ui::Appl
 Application::~Application() {
   delete ui;
 }
+
+void Application::redrawAllCharts() {
+  qreal argumentDelta = static_cast<qreal>(gridUnitX) / static_cast<qreal>(gridLengthX);
+  qreal argumentMaximum = static_cast<qreal>(centerX) * argumentDelta;
+  qreal argumentMinimum = -1.0 * argumentMaximum;
+
+  QVector<qreal> arguments;
+
+  QPen* chartColor = new QPen(QColor(255, 255, 255));
+  QPen* chartColorSelected = new QPen(QColor(255, 128, 0));
+
+  for (qreal argument = argumentMinimum; argument < argumentMaximum; argument += argumentDelta) { // Calculating arguments values list.
+    arguments.append(argument - chartShiftX);
+  }
+
+  for (QString chartIdentifier : chartList -> keys()) {
+    qDeleteAll(groupList -> value(chartIdentifier) -> childItems());
+    chartList -> value(chartIdentifier) -> setArguments(arguments);
+    QVector<qreal> values = chartList -> value(chartIdentifier) -> getValues(); // Retrieving computed functions values.
+
+    for (qint32 point = 0; point < chartList -> value(chartIdentifier) -> signalLength() - 1; point++) {
+      QGraphicsLineItem* line = new QGraphicsLineItem(point, centerY - (values[point] + chartShiftY) * (gridLengthY / gridUnitY), point + 1, centerY - (values[point + 1] + chartShiftY) * (gridLengthY / gridUnitY));
+
+      if (chartList -> value(chartIdentifier) -> isSelected == true) {
+        line -> setPen(*chartColorSelected);
+      } else {
+        line -> setPen(*chartColor);
+      }
+
+      groupList -> value(chartIdentifier) -> addToGroup(line);
+    }
+  }
+}
