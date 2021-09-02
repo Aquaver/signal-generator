@@ -47,3 +47,10 @@ void Application::redrawAllCharts() {
     }
   }
 }
+
+void Application::updateAxesLabel() {
+  QString labelX = QString("X: %1 [s / div]").arg(gridUnitX);
+  QString labelY = QString("Y: %1 [V / div]").arg(gridUnitY);
+
+  ui -> labelChart -> setText(labelX + '\n' + labelY);
+}
