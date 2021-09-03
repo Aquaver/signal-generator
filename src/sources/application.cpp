@@ -54,3 +54,9 @@ void Application::updateAxesLabel() {
 
   ui -> labelChart -> setText(labelX + '\n' + labelY);
 }
+
+void Application::updateCenterLabel() {
+  QString label = QString("Center: (%1, %2)").arg(-1 * chartShiftX).arg(-1 * chartShiftY);
+
+  ui -> labelChartCenter -> setText(label);
+}
