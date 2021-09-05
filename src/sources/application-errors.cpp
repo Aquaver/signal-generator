@@ -13,3 +13,15 @@ void Application::errorAddingChart() {
 
   error.exec();
 }
+
+void Application::errorInvalidDeadTime() {
+  QMessageBox error;
+  QString line1 = "Invalid dead time value";
+  QString line2 = "This value must be positive or zero";
+
+  error.setIcon(QMessageBox::Icon::Critical);
+  error.setText(line1 + '\n' + line2);
+  error.setWindowTitle("Signal Generator - Error");
+
+  error.exec();
+}
