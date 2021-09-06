@@ -25,3 +25,15 @@ void Application::errorInvalidDeadTime() {
 
   error.exec();
 }
+
+void Application::errorInvalidDutyCycle() {
+  QMessageBox error;
+  QString line1 = "Invalid duty cycle value";
+  QString line2 = "This value must be between 0 and 100 percent";
+
+  error.setIcon(QMessageBox::Icon::Critical);
+  error.setText(line1 + '\n' + line2);
+  error.setWindowTitle("Signal Generator - Error");
+
+  error.exec();
+}
