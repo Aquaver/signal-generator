@@ -37,3 +37,14 @@ void Application::errorInvalidDutyCycle() {
 
   error.exec();
 }
+
+void Application::errorInvalidSignalCompound() {
+  QMessageBox error;
+  QString line = "Attempt to create invalid compound signal";
+
+  error.setIcon(QMessageBox::Icon::Critical);
+  error.setText(line);
+  error.setWindowTitle("Signal Generator - Error");
+
+  error.exec();
+}
