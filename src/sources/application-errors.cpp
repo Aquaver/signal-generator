@@ -48,3 +48,15 @@ void Application::errorInvalidSignalCompound() {
 
   error.exec();
 }
+
+void Application::errorInvalidEdgeTime() {
+  QMessageBox error;
+  QString line1 = "Invalid edge time value";
+  QString line2 = "This value must be positive (excluding zero)";
+
+  error.setIcon(QMessageBox::Icon::Critical);
+  error.setText(line1 + '\n' + line2);
+  error.setWindowTitle("Signal Generator - Error");
+
+  error.exec();
+}
