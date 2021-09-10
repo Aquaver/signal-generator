@@ -58,3 +58,44 @@ void Application::initChartField() {
   ui -> labelChart -> setText(labelAxisX + '\n' + labelAxisY);
   ui -> labelChartCenter -> setText("Center: (0, 0)");
 }
+
+void Application::initTabOrder() {
+  #define SET_TAB_ORDER(X, Y) ui -> pageMain -> setTabOrder(X, Y)
+
+  SET_TAB_ORDER(ui -> textSineParameterAmplitude, ui -> textSineParameterFrequency);
+  SET_TAB_ORDER(ui -> textSineParameterFrequency, ui -> textSineParameterPhase);
+  SET_TAB_ORDER(ui -> textSineParameterPhase, ui -> textSineParameterConstant);
+  SET_TAB_ORDER(ui -> textSineParameterConstant, ui -> buttonAddSine);
+
+  SET_TAB_ORDER(ui -> buttonAddSine, ui -> textSquareParameterAmplitude);
+  SET_TAB_ORDER(ui -> textSquareParameterAmplitude, ui -> textSquareParameterPeriod);
+  SET_TAB_ORDER(ui -> textSquareParameterPeriod, ui -> textSquareParameterDutyCycle);
+  SET_TAB_ORDER(ui -> textSquareParameterDutyCycle, ui -> textSquareParameterPhase);
+  SET_TAB_ORDER(ui -> textSquareParameterPhase, ui -> textSquareParameterConstant);
+  SET_TAB_ORDER(ui -> textSquareParameterConstant, ui -> buttonAddSquare);
+
+  SET_TAB_ORDER(ui -> buttonAddSquare, ui -> textTriangularParameterAmplitude);
+  SET_TAB_ORDER(ui -> textTriangularParameterAmplitude, ui -> textTriangularParameterDeadTime);
+  SET_TAB_ORDER(ui -> textTriangularParameterDeadTime, ui -> textTriangularParameterPhase);
+  SET_TAB_ORDER(ui -> textTriangularParameterPhase, ui -> textTriangularParameterConstant);
+  SET_TAB_ORDER(ui -> textTriangularParameterConstant, ui -> textTriangularParameterEdgeRising);
+  SET_TAB_ORDER(ui -> textTriangularParameterEdgeRising, ui -> textTriangularParameterEdgeFalling);
+  SET_TAB_ORDER(ui -> textTriangularParameterEdgeFalling, ui -> buttonAddTriangular);
+
+  SET_TAB_ORDER(ui -> buttonAddTriangular, ui -> buttonViewZoomIn);
+  SET_TAB_ORDER(ui -> buttonViewZoomIn, ui -> buttonViewZoomOut);
+  SET_TAB_ORDER(ui -> buttonViewZoomOut, ui -> buttonViewZoomReset);
+
+  SET_TAB_ORDER(ui -> buttonViewZoomReset, ui -> listCharts);
+  SET_TAB_ORDER(ui -> listCharts, ui -> buttonMenuDelete);
+  SET_TAB_ORDER(ui -> buttonMenuDelete, ui -> buttonMenuRename);
+  SET_TAB_ORDER(ui -> buttonMenuRename, ui -> buttonMenuMoreActions);
+
+  SET_TAB_ORDER(ui -> buttonMenuMoreActions, ui -> buttonMoveUp);
+  SET_TAB_ORDER(ui -> buttonMoveUp, ui -> buttonMoveRight);
+  SET_TAB_ORDER(ui -> buttonMoveRight, ui -> buttonMoveDown);
+  SET_TAB_ORDER(ui -> buttonMoveDown, ui -> buttonMoveLeft);
+  SET_TAB_ORDER(ui -> buttonMoveLeft, ui -> buttonMoveCenter);
+
+  #undef SET_TAB_ORDER
+}
