@@ -99,3 +99,16 @@ void Application::initTabOrder() {
 
   #undef SET_TAB_ORDER
 }
+
+void Application::initToolbar() {
+  QMenu* toolbarMenu = new QMenu("Title", this);
+
+  actionList -> insert(MenuActions::MENU_ACTION_ADD, toolbarMenu -> addAction("Sum...", this, SLOT(menuAdd())));
+  actionList -> value(MenuActions::MENU_ACTION_ADD) -> setEnabled(false);
+
+  actionList -> insert(MenuActions::MENU_ACTION_SUBTRACT, toolbarMenu -> addAction("Subtract...", this, SLOT(menuSubtract())));
+  actionList -> value(MenuActions::MENU_ACTION_SUBTRACT) -> setEnabled(false);
+
+  ui -> buttonMenuMoreActions -> setMenu(toolbarMenu);
+  ui -> buttonMenuMoreActions -> setContextMenuPolicy(Qt::ContextMenuPolicy::DefaultContextMenu);
+}
