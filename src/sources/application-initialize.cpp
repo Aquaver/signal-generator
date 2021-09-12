@@ -112,3 +112,15 @@ void Application::initToolbar() {
   ui -> buttonMenuMoreActions -> setMenu(toolbarMenu);
   ui -> buttonMenuMoreActions -> setContextMenuPolicy(Qt::ContextMenuPolicy::DefaultContextMenu);
 }
+
+void Application::initValues() {
+  chartWidth = ui -> chartField -> width();
+  chartHeight = ui -> chartField -> height();
+
+  centerX = chartWidth / 2;
+  centerY = chartHeight / 2;
+
+  chartShiftX = chartShiftY = 0;
+  gridLengthX = gridLengthY = 64;
+  gridUnitX = gridUnitY = 1;
+}
