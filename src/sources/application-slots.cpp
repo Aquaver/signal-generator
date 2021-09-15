@@ -28,3 +28,31 @@ void Application::initSlots() {
 
   connect(ui -> listCharts, SIGNAL(itemSelectionChanged()), this, SLOT(onItemSelected()));
 }
+
+// Interface buttons events.
+void Application::onAddSine() {
+  bool validAmplitude, validConstant, validFrequency, validPhase;
+
+  qreal amplitude = ui -> textSineParameterAmplitude -> text().toDouble(&validAmplitude);
+  qreal constant = ui -> textSineParameterConstant -> text().toDouble(&validConstant);
+  qreal frequency = ui -> textSineParameterFrequency -> text().toDouble(&validFrequency);
+  qreal phase = ui -> textSineParameterPhase -> text().toDouble(&validPhase);
+
+  if (validAmplitude == false || validConstant == false || validFrequency == false || validPhase == false) {
+    errorAddingChart();
+  } else {
+    QString identifier = QUuid::createUuid().toString(QUuid::StringFormat::WithoutBraces);
+    Signal* newSignal = new Sine(amplitude, constant, frequency, phase);
+
+    this -> chartList -> insert(identifier, newSignal);
+    this -> groupList -> insert(identifier, ui -> chartField -> scene() -> createItemGroup({}));
+
+    ui -> textSineParameterAmplitude -> clear();
+    ui -> textSineParameterConstant -> clear();
+    ui -> textSineParameterFrequency -> clear();
+    ui -> textSineParameterPhase -> clear();
+
+    ui -> listCharts -> addItem(identifier);
+    redrawAllCharts();
+  }
+}
