@@ -56,3 +56,33 @@ void Application::onAddSine() {
     redrawAllCharts();
   }
 }
+
+void Application::onAddSquare() {
+  bool validAmplitude, validConstant, validDutyCycle, validPeriod, validPhase;
+
+  qreal amplitude = ui -> textSquareParameterAmplitude -> text().toDouble(&validAmplitude);
+  qreal constant = ui -> textSquareParameterConstant -> text().toDouble(&validConstant);
+  qreal dutyCycle = ui -> textSquareParameterDutyCycle -> text().toDouble(&validDutyCycle);
+  qreal period = ui -> textSquareParameterPeriod -> text().toDouble(&validPeriod);
+  qreal phase = ui -> textSquareParameterPhase -> text().toDouble(&validPhase);
+
+  if (validAmplitude == false || validConstant == false || validDutyCycle == false || validPeriod == false || validPhase == false) {
+    errorAddingChart();
+  } else if (dutyCycle < 0 || dutyCycle > 100) {
+    errorInvalidDutyCycle();
+  } else {
+    QString identifier = QUuid::createUuid().toString(QUuid::StringFormat::WithoutBraces);
+    Signal* newSignal = new Square(amplitude, constant, dutyCycle, period, phase);
+
+    this -> chartList -> insert(identifier, newSignal);
+    this -> groupList -> insert(identifier, ui -> chartField -> scene() -> createItemGroup({}));
+
+    ui -> textSquareParameterAmplitude -> clear();
+    ui -> textSquareParameterConstant -> clear();
+    ui -> textSquareParameterDutyCycle -> clear();
+    ui -> textSquareParameterPeriod -> clear();
+
+    ui -> listCharts -> addItem(identifier);
+    redrawAllCharts();
+  }
+}
