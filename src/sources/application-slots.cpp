@@ -86,3 +86,38 @@ void Application::onAddSquare() {
     redrawAllCharts();
   }
 }
+
+void Application::onAddTriangular() {
+  bool validAmplitude, validConstant, validDeadTime, validEdgeFalling, validEdgeRising, validPhase;
+
+  qreal amplitude = ui -> textTriangularParameterAmplitude -> text().toDouble(&validAmplitude);
+  qreal constant = ui -> textTriangularParameterConstant -> text().toDouble(&validConstant);
+  qreal deadTime = ui -> textTriangularParameterDeadTime -> text().toDouble(&validDeadTime);
+  qreal edgeFalling = ui -> textTriangularParameterEdgeFalling -> text().toDouble(&validEdgeFalling);
+  qreal edgeRising = ui -> textTriangularParameterEdgeRising -> text().toDouble(&validEdgeRising);
+  qreal phase = ui -> textTriangularParameterPhase -> text().toDouble(&validPhase);
+
+  if (validAmplitude == false || validConstant == false || validDeadTime == false || validEdgeFalling == false || validEdgeRising == false || validPhase == false) {
+    errorAddingChart();
+  } else if (deadTime < 0) {
+    errorInvalidDeadTime();
+  } else if (edgeFalling <= 0 || edgeRising <= 0) {
+    errorInvalidEdgeTime();
+  } else {
+    QString identifier = QUuid::createUuid().toString(QUuid::StringFormat::WithoutBraces);
+    Signal* newSignal = new Triangular(amplitude, constant, deadTime, edgeFalling, edgeRising, phase);
+
+    this -> chartList -> insert(identifier, newSignal);
+    this -> groupList -> insert(identifier, ui -> chartField -> scene() -> createItemGroup({}));
+
+    ui -> textTriangularParameterAmplitude -> clear();
+    ui -> textTriangularParameterConstant -> clear();
+    ui -> textTriangularParameterDeadTime -> clear();
+    ui -> textTriangularParameterEdgeFalling -> clear();
+    ui -> textTriangularParameterEdgeRising -> clear();
+    ui -> textTriangularParameterPhase -> clear();
+
+    ui -> listCharts -> addItem(identifier);
+    redrawAllCharts();
+  }
+}
