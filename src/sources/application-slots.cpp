@@ -121,3 +121,11 @@ void Application::onAddTriangular() {
     redrawAllCharts();
   }
 }
+
+void Application::onShiftCenter() {
+  chartShiftX = 0;
+  chartShiftY = 0;
+
+  updateCenterLabel();
+  redrawAllCharts();
+}
