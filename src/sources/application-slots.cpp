@@ -129,3 +129,10 @@ void Application::onShiftCenter() {
   updateCenterLabel();
   redrawAllCharts();
 }
+
+void Application::onShiftDown() {
+  chartShiftY += gridUnitY;
+
+  updateCenterLabel();
+  redrawAllCharts();
+}
