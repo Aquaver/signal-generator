@@ -136,3 +136,10 @@ void Application::onShiftDown() {
   updateCenterLabel();
   redrawAllCharts();
 }
+
+void Application::onShiftLeft() {
+  chartShiftX += gridUnitX;
+
+  updateCenterLabel();
+  redrawAllCharts();
+}
