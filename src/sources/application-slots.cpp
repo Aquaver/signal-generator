@@ -143,3 +143,10 @@ void Application::onShiftLeft() {
   updateCenterLabel();
   redrawAllCharts();
 }
+
+void Application::onShiftRight() {
+  chartShiftX -= gridUnitX;
+
+  updateCenterLabel();
+  redrawAllCharts();
+}
