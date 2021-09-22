@@ -150,3 +150,10 @@ void Application::onShiftRight() {
   updateCenterLabel();
   redrawAllCharts();
 }
+
+void Application::onShiftUp() {
+  chartShiftY -= gridUnitY;
+
+  updateCenterLabel();
+  redrawAllCharts();
+}
