@@ -157,3 +157,11 @@ void Application::onShiftUp() {
   updateCenterLabel();
   redrawAllCharts();
 }
+
+void Application::onZoomIn() {
+  gridUnitX /= 2;
+  gridUnitY /= 2;
+
+  redrawAllCharts();
+  updateAxesLabel();
+}
