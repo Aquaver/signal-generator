@@ -165,3 +165,11 @@ void Application::onZoomIn() {
   redrawAllCharts();
   updateAxesLabel();
 }
+
+void Application::onZoomOut() {
+  gridUnitX *= 2;
+  gridUnitY *= 2;
+
+  redrawAllCharts();
+  updateAxesLabel();
+}
