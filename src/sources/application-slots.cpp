@@ -173,3 +173,11 @@ void Application::onZoomOut() {
   redrawAllCharts();
   updateAxesLabel();
 }
+
+void Application::onZoomReset() {
+  gridUnitX = 1;
+  gridUnitY = 1;
+
+  redrawAllCharts();
+  updateAxesLabel();
+}
