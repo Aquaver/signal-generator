@@ -181,3 +181,17 @@ void Application::onZoomReset() {
   redrawAllCharts();
   updateAxesLabel();
 }
+
+void Application::onRemove() { // Removes selected chart(s) from field.
+  QList<QListWidgetItem*> deletedCharts = ui -> listCharts -> selectedItems();
+
+  for (QListWidgetItem* chart : deletedCharts) {
+    QString chartName = chart -> text();
+
+    ui -> listCharts -> takeItem(ui -> listCharts -> row(chart));
+    qDeleteAll(groupList -> value(chartName) -> childItems());
+
+    chartList -> remove(chartName);
+    groupList -> remove(chartName);
+  }
+}
