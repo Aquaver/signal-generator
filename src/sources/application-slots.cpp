@@ -195,3 +195,52 @@ void Application::onRemove() { // Removes selected chart(s) from field.
     groupList -> remove(chartName);
   }
 }
+
+void Application::onRename() { // Renames existing chart in list.
+  QString newName = "";
+  QString oldName = ui -> listCharts -> selectedItems().first() -> text();
+
+  QInputDialog* nameInput = new QInputDialog(this);
+  QString inputLabelLine1 = QString("Changing name of following chart: %1").arg(oldName);
+  QString inputLabelLine2 = "Enter new name for this signal";
+
+  nameInput -> setCancelButtonText("Cancel");
+  nameInput -> setLabelText(inputLabelLine1 + '\n' + inputLabelLine2);
+  nameInput -> setOkButtonText("Rename");
+  nameInput -> setTextValue(oldName);
+  nameInput -> setWindowTitle("Rename chart");
+
+  if (nameInput -> exec() == QInputDialog::DialogCode::Accepted && nameInput -> textValue() != oldName && nameInput -> textValue().trimmed() != "") {
+    newName = nameInput -> textValue();
+
+    QList<QListWidgetItem*> oldCharts = ui -> listCharts -> findItems(oldName, Qt::MatchFlag::MatchExactly);
+    QList<QListWidgetItem*> newCharts = ui -> listCharts -> findItems(newName, Qt::MatchFlag::MatchExactly);
+    QListWidgetItem* oldChart = nullptr;
+    QListWidgetItem* newChart = nullptr;
+
+    if (oldCharts.isEmpty() == false) {
+      oldChart = oldCharts.first();
+    }
+
+    if (newCharts.isEmpty() == false) {
+      newChart = newCharts.first();
+    }
+
+    if (newChart != nullptr) {
+      QMessageBox error;
+      QString errorLine1 = "Chart with entered name already exists";
+      QString errorLine2 = "Choose another one to rename";
+
+      error.setIcon(QMessageBox::Icon::Critical);
+      error.setText(errorLine1 + '\n' + errorLine2);
+      error.setWindowTitle("Error");
+
+      error.exec();
+    } else {
+      oldChart -> setText(newName);
+
+      chartList -> insert(newName, chartList -> take(oldName));
+      groupList -> insert(newName, groupList -> take(oldName));
+    }
+  }
+}
