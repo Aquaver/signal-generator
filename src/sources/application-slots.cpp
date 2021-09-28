@@ -244,3 +244,8 @@ void Application::onRename() { // Renames existing chart in list.
     }
   }
 }
+
+// Interface menu events.
+void Application::menuAdd() {
+  createCompoundSignal(CompoundType::SUM, "SUM");
+}
