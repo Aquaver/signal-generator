@@ -249,3 +249,7 @@ void Application::onRename() { // Renames existing chart in list.
 void Application::menuAdd() {
   createCompoundSignal(CompoundType::SUM, "SUM");
 }
+
+void Application::menuSubtract() {
+  createCompoundSignal(CompoundType::DIFFERENCE, "DIFFERENCE");
+}
