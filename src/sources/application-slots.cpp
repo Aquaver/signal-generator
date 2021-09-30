@@ -253,3 +253,38 @@ void Application::menuAdd() {
 void Application::menuSubtract() {
   createCompoundSignal(CompoundType::DIFFERENCE, "DIFFERENCE");
 }
+
+// Other events.
+void Application::onItemSelected() {
+  qint16 selectedChartCount = ui -> listCharts -> selectedItems().length();
+
+  if (selectedChartCount == 0) {
+    ui -> buttonMenuDelete -> setEnabled(false);
+    ui -> buttonMenuRename -> setEnabled(false);
+
+    actionList -> value(MenuActions::MENU_ACTION_ADD) -> setEnabled(false);
+    actionList -> value(MenuActions::MENU_ACTION_SUBTRACT) -> setEnabled(false);
+  } else if (selectedChartCount == 1) {
+    ui -> buttonMenuDelete -> setEnabled(true);
+    ui -> buttonMenuRename -> setEnabled(true);
+
+    actionList -> value(MenuActions::MENU_ACTION_ADD) -> setEnabled(true);
+    actionList -> value(MenuActions::MENU_ACTION_SUBTRACT) -> setEnabled(true);
+  } else { // Only one chart can be renamed at the time.
+    ui -> buttonMenuDelete -> setEnabled(true);
+    ui -> buttonMenuRename -> setEnabled(false);
+
+    actionList -> value(MenuActions::MENU_ACTION_ADD) -> setEnabled(false);
+    actionList -> value(MenuActions::MENU_ACTION_SUBTRACT) -> setEnabled(false);
+  }
+
+  for (QString identifier : chartList -> keys()) { // Resetting selection flags.
+    chartList -> value(identifier) -> isSelected = false;
+  }
+
+  for (QListWidgetItem* selectedChart : ui -> listCharts -> selectedItems()) { // Setting selection flags for selected charts only.
+    chartList -> value(selectedChart -> text()) -> isSelected = true;
+  }
+
+  redrawAllCharts();
+}
