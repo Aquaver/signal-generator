@@ -7,4 +7,7 @@ class CompoundSignal : public Signal {
   public:
     void setCompoundSignals(Signal* first, Signal* second);
     void setCompoundType(CompoundType newType);
+  
+  protected:
+    virtual qreal signalFunction(qreal argument) override;
 };
