@@ -10,4 +10,9 @@ class CompoundSignal : public Signal {
   
   protected:
     virtual qreal signalFunction(qreal argument) override;
+  
+  private:
+    CompoundType type = CompoundType::SUM; // Sum is the default signal compound type.
+    Signal* firstSignal = nullptr;
+    Signal* secondSignal = nullptr;
 };
