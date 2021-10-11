@@ -2,3 +2,6 @@
 
 #include <QtGlobal>
 #include <QVector>
+
+class Signal {
+};
