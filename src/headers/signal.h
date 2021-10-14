@@ -21,4 +21,8 @@ class Signal {
 
     virtual qreal signalFunction(qreal argument) = 0; // Master signal function (mathematical model) which converts an argument into proper value.
     virtual void calculateValues(); // Computes values vector from arguments vector.
+  
+  private:
+    bool valuesValid = false;
+    friend class CompoundSignal;
 };
