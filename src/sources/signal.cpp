@@ -10,3 +10,7 @@ void Signal::calculateValues() {
     values.append(signalFunction(argument)); // Calculating raw signal function values without transforming them into chart position (in pixels).
   }
 }
+
+QVector<qreal> Signal::getArguments() {
+  return arguments;
+}
