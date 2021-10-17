@@ -14,3 +14,12 @@ void Signal::calculateValues() {
 QVector<qreal> Signal::getArguments() {
   return arguments;
 }
+
+QVector<qreal> Signal::getValues() {
+  if (valuesValid == false) {
+    calculateValues();
+    valuesValid = true;
+  }
+
+  return values;
+}
