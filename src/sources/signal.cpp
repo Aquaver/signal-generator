@@ -23,3 +23,8 @@ QVector<qreal> Signal::getValues() {
 
   return values;
 }
+
+void Signal::setArguments(QVector<qreal> newArguments) {
+  arguments = newArguments;
+  valuesValid = false;
+}
