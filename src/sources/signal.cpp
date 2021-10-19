@@ -28,3 +28,11 @@ void Signal::setArguments(QVector<qreal> newArguments) {
   arguments = newArguments;
   valuesValid = false;
 }
+
+qint32 Signal::signalLength() {
+  if (arguments.length() == values.length()) {
+    return arguments.length();
+  } else {
+    return -1; // If value -1 has been received, method 'calculateValues()' should be called.
+  }
+}
