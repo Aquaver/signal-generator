@@ -6,4 +6,7 @@ class Sine : public Signal {
   public:
     Sine() : amplitude{0}, constant{0}, frequency{0}, phase{0} {}
     Sine(qreal amplitude, qreal constant, qreal frequency, qreal phase);
+  
+  protected:
+    virtual qreal signalFunction(qreal argument) override;
 };
