@@ -9,4 +9,10 @@ class Sine : public Signal {
   
   protected:
     virtual qreal signalFunction(qreal argument) override;
+  
+  private:
+    qreal amplitude = 0;
+    qreal constant = 0;
+    qreal frequency = 0;
+    qreal phase = 0;
 };
