@@ -16,3 +16,6 @@ class Sine : public Signal {
     qreal frequency = 0;
     qreal phase = 0;
 };
+
+class Square : public Signal {
+};
