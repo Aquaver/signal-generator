@@ -24,4 +24,11 @@ class Square : public Signal {
   
   protected:
     virtual qreal signalFunction(qreal argument) override;
+  
+  private:
+    qreal amplitude = 0;
+    qreal constant = 0;
+    qreal dutyCycle = 0;
+    qreal period = 0;
+    qreal phase = 0;
 };
