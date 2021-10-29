@@ -32,3 +32,6 @@ class Square : public Signal {
     qreal period = 0;
     qreal phase = 0;
 };
+
+class Triangular : public Signal {
+};
