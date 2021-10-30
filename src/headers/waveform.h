@@ -34,4 +34,7 @@ class Square : public Signal {
 };
 
 class Triangular : public Signal {
+  public:
+    Triangular() : amplitude{0}, constant{0}, deadTime{0}, edgeFalling{0}, edgeRising{0}, phase{0} {}
+    Triangular(qreal amplitude, qreal constant, qreal deadTime, qreal edgeFalling, qreal edgeRising, qreal phase);
 };
