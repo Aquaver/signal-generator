@@ -40,4 +40,12 @@ class Triangular : public Signal {
   
   protected:
     virtual qreal signalFunction(qreal argument) override;
+  
+  private:
+    qreal amplitude = 0;
+    qreal constant = 0;
+    qreal deadTime = 0;
+    qreal edgeFalling = 0;
+    qreal edgeRising = 0;
+    qreal phase = 0;
 };
