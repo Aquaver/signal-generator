@@ -11,3 +11,20 @@ Square::Square(qreal amplitude, qreal constant, qreal dutyCycle, qreal period, q
     dutyCycle = 50;
   }
 }
+
+Triangular::Triangular(qreal amplitude, qreal constant, qreal deadTime, qreal edgeFalling, qreal edgeRising, qreal phase) : amplitude{amplitude}, constant{constant}, deadTime{deadTime}, edgeFalling{edgeFalling}, edgeRising{edgeRising}, phase{phase} {
+  if (deadTime < 0) {
+    perror("[Debug Error] Created Triangular waveform with negative dead time");
+    this -> deadTime = 0;
+  }
+
+  if (edgeFalling <= 0) {
+    perror("[Debug Error] Created Triangular waveform with non-positve falling edge length");
+    this -> edgeFalling = 1;
+  }
+
+  if (edgeRising <= 0) {
+    perror("[Debug Error] Created Triangular waveform with non-positive rising edge length");
+    this -> edgeRising = 1;
+  }
+}
