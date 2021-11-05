@@ -28,3 +28,8 @@ Triangular::Triangular(qreal amplitude, qreal constant, qreal deadTime, qreal ed
     this -> edgeRising = 1;
   }
 }
+
+// Waveform signal functions implementations (overridden from base class).
+qreal Sine::signalFunction(qreal argument) {
+  return amplitude * sin(frequency * (argument - phase)) + constant;
+}
