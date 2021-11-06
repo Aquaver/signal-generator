@@ -33,3 +33,21 @@ Triangular::Triangular(qreal amplitude, qreal constant, qreal deadTime, qreal ed
 qreal Sine::signalFunction(qreal argument) {
   return amplitude * sin(frequency * (argument - phase)) + constant;
 }
+
+qreal Square::signalFunction(qreal argument) {
+  argument -= phase; // Waveform phase shift.
+
+  qreal interval = floor(argument / period);
+  qreal normalizedArgument = argument - (interval * period); // Argument narrowed (normalized) to interval.
+  qreal dutyCycleBound = period * (dutyCycle / 100.0);
+
+  if (dutyCycle > 0) {
+    if (normalizedArgument <= dutyCycleBound) {
+      return amplitude + constant;
+    } else {
+      return (-1 * amplitude) + constant;
+    }
+  } else {
+    return (-1 * amplitude) + constant;
+  }
+}
