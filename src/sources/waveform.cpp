@@ -51,3 +51,22 @@ qreal Square::signalFunction(qreal argument) {
     return (-1 * amplitude) + constant;
   }
 }
+
+qreal Triangular::signalFunction(qreal argument) {
+  argument -= phase;
+
+  qreal period = edgeRising + edgeFalling + deadTime;
+  qreal interval = floor(argument / period);
+  qreal normalizedArgument = argument - (interval * period);
+
+  qreal falling = -1 * (amplitude / edgeFalling);
+  qreal rising = amplitude / edgeRising;
+
+  if (normalizedArgument <= edgeRising) {
+    return normalizedArgument * rising + constant;
+  } else if ((normalizedArgument > edgeRising) && (normalizedArgument <= (edgeRising + edgeFalling))) {
+    return (normalizedArgument - edgeRising - edgeFalling) * falling + constant;
+  } else {
+    return constant; // Triangular waveform's dead time value.
+  }
+}
