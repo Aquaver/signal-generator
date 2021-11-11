@@ -12,3 +12,10 @@ SOURCES += \
   src/sources/main.cpp \
   src/sources/signal.cpp \
   src/sources/waveform.cpp
+
+HEADERS += \
+  src/headers/application.h \
+  src/headers/compound-signal.h \
+  src/headers/compound-type.h \
+  src/headers/signal.h \
+  src/headers/waveform.h
