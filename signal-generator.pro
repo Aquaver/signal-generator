@@ -19,3 +19,6 @@ HEADERS += \
   src/headers/compound-type.h \
   src/headers/signal.h \
   src/headers/waveform.h
+
+FORMS += \
+  forms/application.ui
