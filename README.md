@@ -36,3 +36,5 @@ class Signal {
     friend class CompoundSignal;
 };
 ```
+
+The first class, which is the base abstract one for all types of waveforms is named `Signal` and its body is implemented in its own file. It consists of fields that define behavior of each possible generated signal and simple operations that can be performed on them, such as setting a set of arguments, computing values and retrieving that set of calculated values for this waveform. In addition, a `friend` relationship with another class `CompoundSignal` is also defined here, to allow access to private fields of this class and implement creating compound waveforms.
