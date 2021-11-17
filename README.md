@@ -38,3 +38,9 @@ class Signal {
 ```
 
 The first class, which is the base abstract one for all types of waveforms is named `Signal` and its body is implemented in its own file. It consists of fields that define behavior of each possible generated signal and simple operations that can be performed on them, such as setting a set of arguments, computing values and retrieving that set of calculated values for this waveform. In addition, a `friend` relationship with another class `CompoundSignal` is also defined here, to allow access to private fields of this class and implement creating compound waveforms.
+
+Second class, but first derived from `Signal` one is named `Sine` which indicates that it defines the mathematical model of sinusoidal waveform. As it inherits from a common base class, it is not needed to redefine all the methods and fields. However, in order to be able to create instances of this class, it must overload and implement `signalFunction()` method in which the actual model of the waveform will be stored. This function allows computing set of arguments into set of values. Besides, this class contains some necessary parameters of sine wave - amplitude, frequency, phase shift (horizontal shift) and constant component (vertical shift). Example of generated sinusoidal waveform is shown on the picture below.
+
+<p align="center">
+  <img alt="Sine waveform example" src="https://raw.githubusercontent.com/Aquaver/signal-generator/master/assets/example-sine.png">
+</p>
