@@ -44,3 +44,14 @@ Second class, but first derived from `Signal` one is named `Sine` which indicate
 <p align="center">
   <img alt="Sine waveform example" src="https://raw.githubusercontent.com/Aquaver/signal-generator/master/assets/example-sine.png">
 </p>
+
+The header code file of the next class does not differ from the code of the previous one. Class `Square` defines parameters of the square (rectangular) waveform. It implements its own way of computing function value by overriding `signalFunction()` method and allows creating a new instance of the waveform through the constructor. However, there is one parameter that is limited to strict range. This parameter is defined as `dutyCycle` and its value must be in range from 0 up to 100 (inclusive), so when creating new object, there must be some validation mechanism for checking this condition. For this purpose, an additional implementation file was created, in which the constructor body was included.
+
+```cpp
+Square::Square(qreal amplitude, qreal constant, qreal dutyCycle, qreal period, qreal phase) : amplitude{amplitude}, constant{constant}, dutyCycle{dutyCycle}, period{period}, phase{phase} {
+  if (dutyCycle < 0 || dutyCycle > 100) {
+    perror("[Debug Error] Created Square waveform with invalid duty cycle");
+    dutyCycle = 50;
+  }
+}
+```
