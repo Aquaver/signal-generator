@@ -55,3 +55,9 @@ Square::Square(qreal amplitude, qreal constant, qreal dutyCycle, qreal period, q
   }
 }
 ```
+
+Very simple mechanism has been defined here, which provides validation for the `dutyCycle` parameter. It must be a proper real value in range from 0 to 100. Otherwise, an error message will be displayed and creating an instance of this class will not happen. Example of generated square waveform with 50 percent duty cycle is shown below. Note that the amplitude for square waveform is not equal to the peak to peak value, but from peak to the middle point. Hence this, the signal total height equals twice the amplitude.
+
+<p align="center">
+  <img alt="Square waveform example" src="https://raw.githubusercontent.com/Aquaver/signal-generator/master/assets/example-square.png">
+</p>
