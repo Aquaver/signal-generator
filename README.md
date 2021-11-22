@@ -61,3 +61,9 @@ Very simple mechanism has been defined here, which provides validation for the `
 <p align="center">
   <img alt="Square waveform example" src="https://raw.githubusercontent.com/Aquaver/signal-generator/master/assets/example-square.png">
 </p>
+
+The last class which directly inherits from `Signal` is class called `Triangular` that defines mathematical model of a signal with triangular waveform, but also it allows creating sawtooth waveform by adjusting its parameters. This class is the most complex from the three, but it gives possibility to create a lot of different signal waveforms. For example, to generate a perfect triangular signal, the length of the rising edge must be equal to length of the falling one, and dead time should be set to zero.
+
+<p align="center">
+  <img alt="Triangular waveform example" src="https://raw.githubusercontent.com/Aquaver/signal-generator/master/assets/example-triangular.png">
+</p>
