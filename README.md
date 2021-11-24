@@ -67,3 +67,9 @@ The last class which directly inherits from `Signal` is class called `Triangular
 <p align="center">
   <img alt="Triangular waveform example" src="https://raw.githubusercontent.com/Aquaver/signal-generator/master/assets/example-triangular.png">
 </p>
+
+Unlike square and sinusoidal waveforms, the amplitude of triangular one equals to the total height of the waveform (peak to peak value), because in this type of signal, typical middle point cannot be determined due to its vertically asymmetric character. On the other hand, to generate a sawtooth waveform with similar parameters (amplitude and dead time) it is enough to set sufficiently large ratio of both edge lengths. For example, below waveform has left (rising) edge time set to 0.99 seconds while the time of right (falling) edge is equal to 0.01 seconds. This values pair results in total period of the signal equal to one second and perfectly closes the signal in length of single horizontal division which magnitude is shown in the upper left corner of the chart field.
+
+<p align="center">
+  <img alt="Sawtooth waveform example" src="https://raw.githubusercontent.com/Aquaver/signal-generator/master/assets/example-sawtooth.png">
+</p>
