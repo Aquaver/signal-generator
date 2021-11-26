@@ -73,3 +73,28 @@ Unlike square and sinusoidal waveforms, the amplitude of triangular one equals t
 <p align="center">
   <img alt="Sawtooth waveform example" src="https://raw.githubusercontent.com/Aquaver/signal-generator/master/assets/example-sawtooth.png">
 </p>
+
+## Compound signal waveforms
+
+After the three basic types of waveforms, whose classes inherit directly from the `Signal` abstract base class, it is necessary to explain one more class which also inherits from `Signal` but additionally has privilege of accessing private fields of each instance, because of the `friend` relationship, defined with `CompoundSignal` class. Granted permissions to directly get and set the values of private fields are necessary for retrieving protected `signalFunction()` method from both instances. In newly created waveform object in its own `signalFunction()` method, functions with the same name from the both ones are used to compute final value of compound signal instance, depending on type of the operation - whether it is sum or difference.
+
+```cpp
+#pragma once
+
+#include "src/headers/compound-type.h"
+#include "src/headers/signal.h"
+
+class CompoundSignal : public Signal {
+  public:
+    void setCompoundSignals(Signal* first, Signal* second);
+    void setCompoundType(CompoundType newType);
+
+  protected:
+    virtual qreal signalFunction(qreal argument) override;
+
+  private:
+    CompoundType type = CompoundType::SUM; // Sum is the default signal compound type.
+    Signal* firstSignal = nullptr;
+    Signal* secondSignal = nullptr;
+};
+```
