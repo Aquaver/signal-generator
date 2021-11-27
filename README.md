@@ -98,3 +98,9 @@ class CompoundSignal : public Signal {
     Signal* secondSignal = nullptr;
 };
 ```
+
+Class `CompoundSignal` besides defining in its fields two pointers to the `Signal` class that contains signals from which the new compound waveform will be created, it is also has its own type named `CompoundType` that determines the way of combining signals - add or subtract. Overridden `signalFunction()` method defines a very simple mechanism for performing operations on member signals that uses the same methods from them to compute final value based on values from first and second component. This allows to numerically determine a waveform composed of two signal waveforms with arbitrary shape. Below example of compound signal that consists of six sinusoidal waveforms with amplitude equal to 1 and following frequencies `3; 3.1; 3.2; 3.3; 3.4 and 3.5` that result it specific for this set, beat interference.
+
+<p align="center">
+  <img alt="Compound (beat) waveform example" src="https://raw.githubusercontent.com/Aquaver/signal-generator/master/assets/example-compound-beat.png">
+</p>
