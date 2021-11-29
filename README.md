@@ -104,3 +104,11 @@ Class `CompoundSignal` besides defining in its fields two pointers to the `Signa
 <p align="center">
   <img alt="Compound (beat) waveform example" src="https://raw.githubusercontent.com/Aquaver/signal-generator/master/assets/example-compound-beat.png">
 </p>
+
+Next example shows a complex waveform (orange color) that consists of a sinusoidal signal (with white color) and pure square one (also with white color) whose amplitude is relatively small compared with sine signal's amplitude but with much higher frequency. Determining of such function with analytical methods would be quite difficult, but doing it by numerical method (argument by argument), this task has been simplified as much as possible.
+
+<p align="center">
+  <img alt="Compound (sine and square) waveform example" src="https://raw.githubusercontent.com/Aquaver/signal-generator/master/assets/example-compound-sine-square.png">
+</p>
+
+Shown examples above illustrate that with numerical composition mechanism (somewhat connected with Fourier analysis), implemented three types of waveforms result in literally unlimited possibilities to create different types of waveforms with countless shapes.
