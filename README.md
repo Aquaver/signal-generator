@@ -112,3 +112,11 @@ Next example shows a complex waveform (orange color) that consists of a sinusoid
 </p>
 
 Shown examples above illustrate that with numerical composition mechanism (somewhat connected with Fourier analysis), implemented three types of waveforms result in literally unlimited possibilities to create different types of waveforms with countless shapes.
+
+## Building
+
+* Install Qt framework, recommended version is `5.15.0`.
+* Download source code from this repository.
+* Open project file in Qt Creator (file with `pro` extension).
+* Select proper toolkits, recommended one is `MSVC2019` for 32-bit architecture.
+* Build project.
